@@ -25,12 +25,13 @@ const useStyles = makeStyles(theme => ({
         width: '30%',
         height: '300px',
         borderRight: '1px solid gray',
-        overflow: 'scroll'
+        
     },
     chatWindow: {
         width: '70%',
         height: '300px',
         padding: '20px',
+        overflowY: 'scroll'
     },
     chatBox: {
         width: '85%',
