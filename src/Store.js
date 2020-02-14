@@ -66,8 +66,9 @@ function sendChatAction(value){
 
 export default function Store(props) {
     const [allChats, dispatch] = React.useReducer(reducer, initState);
+    // const port = process.env.PORT;
     if (!socket) {
-        socket = io(":3001");
+        socket = io(`https://ez-talk-api.herokuapp.com/`);
         socket.on("chat message", function(msg) {
             console.log(msg)
           dispatch({ type: 'RECIEVE_MESSAGE', payload: msg });
