@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
     topicWindow: {
         width: '30%',
         height: '300px',
-        borderRight: '1px solid gray'
+        borderRight: '1px solid gray',
+        overflow: 'scroll'
     },
     chatWindow: {
         width: '70%',

@@ -75,7 +75,7 @@ export default function Store(props) {
         });
       }
     
-      const user = 'user' + Math.random(100).toFixed();
+      const user = 'anonymous' + Math.random(100).toFixed(2);
     
      return (
         <CTX.Provider value={{allChats, sendChatAction, user}}>
